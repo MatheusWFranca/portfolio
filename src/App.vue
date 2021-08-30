@@ -1,32 +1,69 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Home />
   </div>
 </template>
 
+<script>
+import Home from '@/views/Home.vue';
+
+export default {
+  name: 'app',
+  components: {
+    Home,
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #ffb666;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'IBM PLEX MONO', Arial, Helvetica, sans-serif;
+  background: url('./assets/waves.svg') no-repeat bottom;
+}
+
+.btn {
+  display: block;
+  padding: 10px 30px;
+  background: #ffb666;
+  border-radius: 4px;
+  color: #fff;
   text-align: center;
-  color: #2c3e50;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
+  transition: all 0.3s;
+  border: none;
+  font-family: 'IBM PLEX MONO', Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.btn:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 </style>

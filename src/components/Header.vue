@@ -1,9 +1,9 @@
 <template>
   <header>
     <nav>
-      <h1>Matheus França</h1>
+      <router-link class="mf" to="/">mf<span>.</span></router-link>
       <ul>
-        <li class="nav"><router-link to="/">Sobre</router-link></li>
+        <li class="nav"><router-link to="/">Curriculo</router-link></li>
         <li class="nav"><router-link to="/">Projetos</router-link></li>
         <li><router-link class="btn" to="/">Contato</router-link></li>
       </ul>
@@ -20,6 +20,14 @@ export default {
 <style>
 header {
   box-shadow: 0 2px 4px rgba(30, 60, 90, 0.1);
+}
+
+.mf {
+  font-size: 30px;
+}
+
+span {
+  color: #ffb666;
 }
 
 nav {

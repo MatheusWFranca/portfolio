@@ -64,6 +64,7 @@ body {
 
 .btn:hover {
   color: #fff;
+  background: #e80;
   transform: scale(1.1);
 }
 </style>

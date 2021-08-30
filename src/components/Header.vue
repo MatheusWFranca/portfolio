@@ -4,7 +4,7 @@
       <router-link class="mf" to="/">mf<span>.</span></router-link>
       <ul>
         <li class="nav"><router-link to="/">Curriculo</router-link></li>
-        <li class="nav"><router-link to="/">Projetos</router-link></li>
+        <li class="nav"><router-link to="/projetos">Projetos</router-link></li>
         <li><router-link class="btn" to="/">Contato</router-link></li>
       </ul>
     </nav>

@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <Main />
-  </div>
+  <transition>
+    <div>
+      <Main />
+    </div>
+  </transition>
 </template>
 
 <script>

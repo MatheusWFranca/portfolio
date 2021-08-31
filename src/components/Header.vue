@@ -5,7 +5,7 @@
       <ul>
         <li class="nav"><router-link to="/">Curriculo</router-link></li>
         <li class="nav"><router-link to="/projetos">Projetos</router-link></li>
-        <li><router-link class="btn" to="/">Contato</router-link></li>
+        <li><router-link class="btn" to="/contato">Contato</router-link></li>
       </ul>
     </nav>
   </header>

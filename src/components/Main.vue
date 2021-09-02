@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <main class="main">
-      <img class="profile-img" src="../assets/profile-pic.jpeg" />
+      <img class="profile-img" src="../assets/profile-pic.png" />
       <div class="my-details">
         <h1>Olá, Eu sou Matheus 🧙‍♂️</h1>
         <p>
@@ -12,6 +12,9 @@
         <p>
           Em meu tempo livre, costumo jogar, estudar e fazer alguns projetos
           paralelos.
+        </p>
+        <p>
+          Dúvidas? Entre em <router-link to="/contato">contato</router-link>!
         </p>
       </div>
     </main>
@@ -26,9 +29,8 @@ export default {
 
 <style scoped>
 .profile-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  max-width: 200px;
+  border-radius: 15px;
 }
 
 .main {

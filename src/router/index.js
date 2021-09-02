@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Projetos from '../views/Projetos.vue'
 import Contato from '../views/Contato.vue'
+import Bisnik from '../views/Bisnik.vue'
 
 
 Vue.use(VueRouter)
@@ -15,7 +16,12 @@ const routes = [{
   {
     path: '/projetos',
     name: 'projetos',
-    component: Projetos
+    component: Projetos,
+    children: [{
+      path: 'bisnik',
+      name: 'bisnik',
+      component: Bisnik,
+    }]
   },
   {
     path: '/contato',

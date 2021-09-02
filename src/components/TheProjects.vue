@@ -1,22 +1,30 @@
 <template>
   <section class="container">
-    <div class="slide-wrapper">
-      <ul class="slide">
-        <li class="active">
-          <img src="../assets/projeto-1.png" alt="Techno" />
-        </li>
+    <div class="slide-wrapper" @click="getIndex">
+      <ul class="slide" ref="carrosel">
         <li>
+          <img src="../assets/projeto-1.png" alt="Techno " />
+        </li>
+        <li class="animais">
           <img src="../assets/projeto-2.png" alt="Animais Fantasticos" />
         </li>
-        <li><img src="../assets/projeto-3.png" alt="Techno Cursos" /></li>
-        <li><img src="../assets/projeto-4.png" alt="Clima Diário" /></li>
-        <li><img src="../assets/projeto-5.png" alt="Bisnik" /></li>
-        <li>6</li>
+        <li class="technocursos">
+          <img src="../assets/projeto-3.png" alt="Techno Cursos" />
+        </li>
+        <li class="clima">
+          <img src="../assets/projeto-4.png" alt="Clima Diário" />
+        </li>
+        <li class="bisnik">
+          <img src="../assets/projeto-5.png" alt="Bisnik" />
+        </li>
       </ul>
     </div>
-    <div class="arrow-nav">
+    <div class="arrow-nav" @click="getIndex">
       <button class="prev"></button>
       <button class="next"></button>
+    </div>
+    <div class="sobre">
+      <button class="btn">Sobre o Projeto {{ slide }}</button>
     </div>
   </section>
 </template>
@@ -26,6 +34,11 @@ import { SlideNav } from '@/helpers/slide.js';
 
 export default {
   name: 'TheProjects',
+  data() {
+    return {
+      slide: '',
+    };
+  },
   methods: {
     initSlide() {
       const slide = new SlideNav('.slide', '.slide-wrapper');
@@ -33,9 +46,14 @@ export default {
       slide.addArrow('.prev', '.next');
       slide.addControl();
     },
+    getIndex() {
+      const lista = document.querySelector('.active img').getAttribute('alt');
+      this.slide = lista;
+    },
   },
   mounted() {
     this.initSlide();
+    this.getIndex();
   },
 };
 </script>
@@ -43,6 +61,15 @@ export default {
 <style>
 .container {
   margin-top: 30px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 img {
@@ -121,5 +148,14 @@ img {
 
 .arrow-nav .prev {
   transform: rotate(180deg);
+}
+
+.project {
+  text-align: center;
+}
+
+.sobre {
+  display: flex;
+  justify-content: center;
 }
 </style>

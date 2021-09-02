@@ -1,5 +1,5 @@
 <template>
-  <p>Bisnik</p>
+  <p>Clima</p>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <p>Bisnik</p>
+  <p>Animais Fantasticos</p>
 </template>
 
 <script>

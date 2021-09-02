@@ -1,5 +1,5 @@
 <template>
-  <p>Bisnik</p>
+  <p>Techno cursos</p>
 </template>
 
 <script>

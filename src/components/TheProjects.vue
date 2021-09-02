@@ -3,7 +3,7 @@
     <div class="slide-wrapper" @click="getIndex">
       <ul class="slide" ref="carrosel">
         <li>
-          <img src="../assets/projeto-1.png" alt="Techno " />
+          <img src="../assets/projeto-1.png" alt="Techno" />
         </li>
         <li class="animais">
           <img src="../assets/projeto-2.png" alt="Animais Fantasticos" />
@@ -12,7 +12,7 @@
           <img src="../assets/projeto-3.png" alt="Techno Cursos" />
         </li>
         <li class="clima">
-          <img src="../assets/projeto-4.png" alt="Clima Diário" />
+          <img src="../assets/projeto-4.png" alt="Clima Diario" />
         </li>
         <li class="bisnik">
           <img src="../assets/projeto-5.png" alt="Bisnik" />
@@ -24,7 +24,10 @@
       <button class="next"></button>
     </div>
     <div class="sobre">
-      <button class="btn">Sobre o Projeto {{ slide }}</button>
+      <router-link :to="{ name: `${slide}`, params: { slide } }"
+        >Sobre o Projeto {{ slide }}</router-link
+      >
+      <img class="arrow-img" src="../assets/arrow-red.svg" alt="Arrow-Icon" />
     </div>
   </section>
 </template>
@@ -76,6 +79,20 @@ img {
   display: block;
   max-width: 100%;
   min-height: 100%;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+}
+
+.sobre img {
+  margin-left: 10px;
+}
+
+.sobre:hover {
+  color: #e54;
+  transition: all 0.3s;
 }
 
 .slide-wrapper {
@@ -157,5 +174,11 @@ img {
 .sobre {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .slide-wrapper {
+    max-width: 100%;
+  }
 }
 </style>

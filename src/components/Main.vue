@@ -18,6 +18,15 @@
         </p>
       </div>
     </main>
+    <article class="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li><img src="../assets/javascript.svg" alt="Javascript" /></li>
+        <li><img src="../assets/vue.svg" alt="Vue.js" /></li>
+        <li><img src="../assets/html.svg" alt="Html5" /></li>
+        <li><img src="../assets/css.svg" alt="CSS" /></li>
+      </ul>
+    </article>
   </section>
 </template>
 
@@ -37,6 +46,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -56,5 +66,26 @@ p {
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(30, 60, 90, 0.1);
+}
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(30, 60, 90, 0.1);
+}
+
+h2 {
+  margin: 15px 0px;
+}
+
+ul {
+  display: flex;
+}
+
+li img {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
 }
 </style>

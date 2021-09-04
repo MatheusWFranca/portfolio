@@ -71,10 +71,6 @@ export default {
   justify-content: center;
 }
 
-h2 {
-  text-align: center;
-}
-
 img {
   display: block;
   max-width: 100%;

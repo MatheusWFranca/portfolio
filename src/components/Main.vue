@@ -68,11 +68,16 @@ p {
   box-shadow: 0 2px 4px rgba(30, 60, 90, 0.1);
 }
 
+.habilidades::before {
+  content: '';
+  width: 50%;
+  border-top: 1px solid rgba(30, 60, 90, 0.1);
+}
+
 .habilidades {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid rgba(30, 60, 90, 0.1);
 }
 
 h2 {

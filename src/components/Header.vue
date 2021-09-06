@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: "Header",
 };
 </script>
 
@@ -47,5 +47,6 @@ nav h1 {
 li {
   display: inline-block;
   padding-right: 20px;
+  font-weight: normal;
 }
 </style>

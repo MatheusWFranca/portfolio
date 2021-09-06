@@ -8,8 +8,8 @@
         <li class="animais">
           <img src="../assets/projeto-2.png" alt="Animais Fantasticos" />
         </li>
-        <li class="technocursos">
-          <img src="../assets/projeto-3.png" alt="Techno Cursos" />
+        <li class="devfinances">
+          <img src="../assets/projeto-3.png" alt="devfinances" />
         </li>
         <li class="clima">
           <img src="../assets/projeto-4.png" alt="Clima Diario" />
@@ -33,24 +33,24 @@
 </template>
 
 <script>
-import { SlideNav } from '@/helpers/slide.js';
+import { SlideNav } from "@/helpers/slide.js";
 
 export default {
-  name: 'TheProjects',
+  name: "TheProjects",
   data() {
     return {
-      slide: '',
+      slide: "",
     };
   },
   methods: {
     initSlide() {
-      const slide = new SlideNav('.slide', '.slide-wrapper');
+      const slide = new SlideNav(".slide", ".slide-wrapper");
       slide.init();
-      slide.addArrow('.prev', '.next');
+      slide.addArrow(".prev", ".next");
       slide.addControl();
     },
     getIndex() {
-      const lista = document.querySelector('.active img').getAttribute('alt');
+      const lista = document.querySelector(".active img").getAttribute("alt");
       this.slide = lista;
     },
   },
@@ -120,13 +120,13 @@ img {
   transform: scale(1);
 }
 
-[data-control='slide'] {
+[data-control="slide"] {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-[data-control='slide'] li a {
+[data-control="slide"] li a {
   display: block;
   width: 12px;
   height: 12px;
@@ -137,8 +137,8 @@ img {
   margin: 4px;
 }
 
-[data-control='slide'] li.active a,
-[data-control='slide'] li a:hover {
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover {
   background: #e54;
 }
 
@@ -156,7 +156,7 @@ img {
   color: white;
   width: 40px;
   height: 40px;
-  background: #e54 url('../assets/arrow.svg') center center no-repeat;
+  background: #e54 url("../assets/arrow.svg") center center no-repeat;
 }
 
 .arrow-nav .prev {

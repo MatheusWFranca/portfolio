@@ -1,5 +1,5 @@
 <template>
-  <p>Techno cursos</p>
+  <p>devfinances</p>
 </template>
 
 <script>

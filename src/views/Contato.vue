@@ -7,7 +7,7 @@
         <input type="text" id="nome" v-model="nome" name="nome" />
         <label for="email">Email</label>
         <input type="email" id="email" v-model="email" name="email" />
-        <textarea name="textarea" id="textarea" rows="10">Olá</textarea>
+        <textarea name="textarea" id="textarea" rows="10"></textarea>
       </form>
       <button class="btn">Enviar</button>
     </div>
@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'Contato',
+  name: "Contato",
 };
 </script>
 

@@ -21,11 +21,6 @@ export default {
 </script>
 
 <style>
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -51,8 +46,7 @@ a:hover {
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "IBM PLEX MONO", Arial, Helvetica, sans-serif;
   background: url("./assets/waves.svg") no-repeat bottom;
 }

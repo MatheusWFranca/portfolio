@@ -51,8 +51,8 @@ h1 {
 }
 
 p {
-  margin-bottom: 10px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -72,5 +72,13 @@ li {
 .content {
   margin-top: 40px;
   display: flex;
+}
+
+.v-enter {
+  opacity: 0;
+  transform: translate3d(-20px, 0, 0);
+}
+.v-enter-active {
+  transition: all 0.3s;
 }
 </style>

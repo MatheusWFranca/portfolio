@@ -12,50 +12,50 @@ import Bisnik from '../views/Bisnik.vue'
 Vue.use(VueRouter)
 
 const routes = [{
-  path: '/',
-  name: 'Home',
-  component: Home
-},
-{
-  path: '/projetos',
-  name: 'projetos',
-  component: Projetos,
-},
-{
-  path: '/projeto/techno',
-  name: 'Techno',
-  component: Techno,
-  props: true,
-},
-{
-  path: '/projeto/animais',
-  name: 'Animais Fantasticos',
-  component: Animais,
-  props: true,
-},
-{
-  path: '/projeto/devfinances',
-  name: 'devfinances',
-  component: DevFinances,
-  props: true,
-},
-{
-  path: '/projeto/clima',
-  name: 'Clima Diario',
-  component: Clima,
-  props: true,
-},
-{
-  path: '/projeto/bisnik',
-  name: 'Bisnik',
-  component: Bisnik,
-  props: true,
-},
-{
-  path: '/contato',
-  name: 'contato',
-  component: Contato
-}
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/projetos',
+    name: 'projetos',
+    component: Projetos,
+  },
+  {
+    path: '/projeto/techno',
+    name: 'Techno',
+    component: Techno,
+    props: true,
+  },
+  {
+    path: '/projeto/animais',
+    name: 'Animais Fantasticos',
+    component: Animais,
+    props: true,
+  },
+  {
+    path: '/projeto/devfinances',
+    name: 'Devfinances',
+    component: DevFinances,
+    props: true,
+  },
+  {
+    path: '/projeto/clima',
+    name: 'Clima Diario',
+    component: Clima,
+    props: true,
+  },
+  {
+    path: '/projeto/bisnik',
+    name: 'Bisnik',
+    component: Bisnik,
+    props: true,
+  },
+  {
+    path: '/contato',
+    name: 'contato',
+    component: Contato
+  }
 ]
 
 const router = new VueRouter({

@@ -26,12 +26,13 @@
         </a>
       </div>
     </div>
+    <q>A maior constante da nossa vida é a Mudança - Heráclito</q>
   </section>
 </template>
 
 <script>
 export default {
-  name: "Contato",
+  name: 'Contato',
 };
 </script>
 
@@ -56,18 +57,19 @@ img {
   margin: 40px auto;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .medias {
+  max-width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .socials {
   display: flex;
-  justify-content: center;
 }
-
 .socials a {
   padding: 10px;
 }
@@ -75,6 +77,7 @@ img {
 .socials img {
   width: 30px;
   height: 30px;
+  flex: 1;
 }
 
 h2 {
@@ -93,5 +96,10 @@ input,
 textarea {
   max-width: 100%;
   width: 300px;
+}
+
+q {
+  font-style: italic;
+  margin-top: 40px;
 }
 </style>

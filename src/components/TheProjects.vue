@@ -9,7 +9,7 @@
           <img src="../assets/projeto-2.png" alt="Animais Fantasticos" />
         </li>
         <li class="devfinances">
-          <img src="../assets/projeto-3.png" alt="devfinances" />
+          <img src="../assets/projeto-3.png" alt="Devfinances" />
         </li>
         <li class="clima">
           <img src="../assets/projeto-4.png" alt="Clima Diario" />

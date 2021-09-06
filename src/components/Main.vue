@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .profile-img {
   max-width: 200px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .main {

@@ -15,10 +15,7 @@
         <li>Criações de API</li>
         <li>Rotas</li>
       </ul>
-      <a
-        class="btn"
-        href="https://techno-jat2sbvda-marlonmnz.vercel.app/"
-        target="_blank"
+      <a class="btn" href="https://matheustechno.netlify.app/" target="_blank"
         >Preview do Projeto</a
       >
       <a

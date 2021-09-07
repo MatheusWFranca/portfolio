@@ -3,10 +3,11 @@
     <div class="contact">
       <h2>Entre em contato</h2>
       <form>
-        <label for="nome">Nome</label>
+        <label for="nome">Nome_</label>
         <input type="text" id="nome" v-model="nome" name="nome" />
-        <label for="email">Email</label>
+        <label for="email">Email_</label>
         <input type="email" id="email" v-model="email" name="email" />
+        <label for="textarea">Sua mensagem_</label>
         <textarea name="textarea" id="textarea" rows="10"></textarea>
       </form>
       <button class="btn">Enviar</button>
@@ -32,7 +33,7 @@
 
 <script>
 export default {
-  name: "Contato",
+  name: 'Contato',
 };
 </script>
 
@@ -65,6 +66,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .socials {
@@ -99,7 +101,15 @@ textarea {
 }
 
 q {
+  text-align: center;
   font-style: italic;
-  margin-top: 40px;
+  margin: 60px 0;
+}
+
+@media screen and (max-width: 579px) {
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 </style>

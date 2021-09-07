@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
+import Header from '@/components/Header.vue';
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
     Header,
   },
@@ -47,8 +47,8 @@ a:hover {
 
 body {
   min-height: 100vh;
-  font-family: "IBM PLEX MONO", Arial, Helvetica, sans-serif;
-  background: url("./assets/waves.svg") no-repeat bottom;
+  font-family: 'IBM PLEX MONO', Arial, Helvetica, sans-serif;
+  background: url('./assets/waves.svg') no-repeat bottom;
 }
 
 .btn {
@@ -62,7 +62,7 @@ body {
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
   transition: all 0.3s;
   border: none;
-  font-family: "IBM PLEX MONO", Arial, Helvetica, sans-serif;
+  font-family: 'IBM PLEX MONO', Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
@@ -102,8 +102,9 @@ textarea {
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.1);
   transition: all 0.3s;
   font-size: 1rem;
-  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
   margin-bottom: 15px;
+  background: #f8f8fc;
 }
 
 input:hover,

@@ -2,15 +2,24 @@
   <section class="container">
     <div class="contact">
       <h2>Entre em contato</h2>
-      <form>
-        <label for="nome">Nome_</label>
-        <input type="text" id="nome" v-model="nome" name="nome" />
+      <form
+        action="https://formsubmit.co/matheuswfranca@outlook.com"
+        method="POST"
+      >
+        <label for="nome" required>Nome_</label>
+        <input type="text" id="nome" v-model="nome" name="nome" required />
         <label for="email">Email_</label>
-        <input type="email" id="email" v-model="email" name="email" />
+        <input type="email" id="email" v-model="email" name="email" required />
         <label for="textarea">Sua mensagem_</label>
-        <textarea name="textarea" id="textarea" rows="10"></textarea>
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://www.mfranca.dev/projetos"
+        />
+        <textarea name="message" id="message" rows="10" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
       </form>
-      <button class="btn">Enviar</button>
     </div>
     <div class="medias">
       <img src="../assets/contact.svg" alt="Contato" />

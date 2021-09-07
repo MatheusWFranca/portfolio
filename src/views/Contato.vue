@@ -12,11 +12,7 @@
         <input type="email" id="email" v-model="email" name="email" required />
         <label for="textarea">Sua mensagem_</label>
         <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://www.mfranca.dev/projetos"
-        />
+        <input type="hidden" name="_next" value="https://www.mfranca.dev/" />
         <textarea name="message" id="message" rows="10" required></textarea>
         <button type="submit" class="btn">Enviar</button>
       </form>

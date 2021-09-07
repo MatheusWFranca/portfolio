@@ -35,7 +35,7 @@ export default {};
 <style scoped>
 .container {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 15px auto;
   min-height: 300px;
   padding: 15px;
   border-radius: 5px;

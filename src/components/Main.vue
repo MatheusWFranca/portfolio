@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'Main',
+  name: "Main",
 };
 </script>
 
@@ -69,7 +69,7 @@ p {
 }
 
 .habilidades::before {
-  content: '';
+  content: "";
   width: 50%;
   border-top: 1px solid rgba(30, 60, 90, 0.1);
 }
@@ -92,5 +92,20 @@ li img {
   width: 35px;
   height: 35px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 460px) {
+  .profile-img {
+    max-width: 120px;
+    align-self: flex-start;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
 </style>

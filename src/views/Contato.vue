@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'Contato',
+  name: "Contato",
 };
 </script>
 
@@ -54,7 +54,7 @@ img {
 
 .container {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 15px auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

@@ -1,19 +1,39 @@
 <template>
   <header>
-    <nav>
+    <nav id="nav">
       <router-link class="mf" to="/">mf<span>.</span></router-link>
-      <ul>
-        <li class="nav"><router-link to="/">Curriculo</router-link></li>
-        <li class="nav"><router-link to="/projetos">Projetos</router-link></li>
-        <li><router-link class="btn" to="/contato">Contato</router-link></li>
+      <button class="btn-mobile" @click="toggleMenu">
+        <MenuHamburguer />
+      </button>
+      <ul class="menu">
+        <li @click="toggleMenu">
+          <router-link to="/">Curriculo</router-link>
+        </li>
+        <li @click="toggleMenu">
+          <router-link to="/projetos">Projetos</router-link>
+        </li>
+        <li @click="toggleMenu">
+          <router-link class="btn" to="/contato">Contato</router-link>
+        </li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script>
+import MenuHamburguer from "@/components/MenuHamburguer.vue";
+
 export default {
   name: "Header",
+  components: {
+    MenuHamburguer,
+  },
+  methods: {
+    toggleMenu() {
+      const nav = document.querySelector("#nav");
+      nav.classList.toggle("active");
+    },
+  },
 };
 </script>
 
@@ -24,6 +44,16 @@ header {
 
 .mf {
   font-size: 30px;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0px 5px;
+  margin: 10px;
 }
 
 span {
@@ -44,9 +74,42 @@ nav h1 {
   font-size: 30px;
 }
 
-li {
-  display: inline-block;
-  padding-right: 20px;
-  font-weight: normal;
+@media screen and (max-width: 460px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    height: 0;
+    transition: 0.3s;
+    background: #fff;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active .menu {
+    height: calc(90vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .menu li {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+
+  .btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
 }
 </style>

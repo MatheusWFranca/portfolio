@@ -99,13 +99,5 @@ li img {
     max-width: 120px;
     align-self: flex-start;
   }
-
-  h1 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 14px;
-  }
 }
 </style>

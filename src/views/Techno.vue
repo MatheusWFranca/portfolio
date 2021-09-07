@@ -79,6 +79,13 @@ li {
   transition: all 0.3s;
 }
 
-@media screen and (max-width: 450) {
+@media screen and (max-width: 750px) {
+  .content {
+    flex-direction: column;
+  }
+  .content a {
+    margin: 10px auto 10px auto;
+    max-width: 80%;
+  }
 }
 </style>

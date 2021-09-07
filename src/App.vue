@@ -114,4 +114,18 @@ textarea:focus {
   box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
   border-color: #e80;
 }
+
+@media screen and (max-width: 460px) {
+  h1 {
+    font-size: 19px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}
 </style>

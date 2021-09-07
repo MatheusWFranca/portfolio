@@ -2,8 +2,8 @@
   <section class="container">
     <h1>Techno</h1>
     <p>
-      Techno foi um site projetado no curso de Vue.js pela Origamid e
-      desenvolvido por mim. <br />
+      Techno é um site projetado no curso de Vue.js pela Origamid e desenvolvido
+      por mim. <br />
       As seguintes tecnologias/aprendizados foram desenvolvidos(as).
     </p>
     <div class="content">

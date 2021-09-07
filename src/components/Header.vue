@@ -74,7 +74,7 @@ nav h1 {
   font-size: 30px;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 465px) {
   .menu {
     display: flex;
     flex-direction: column;

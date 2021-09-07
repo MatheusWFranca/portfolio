@@ -25,7 +25,7 @@
     </div>
     <div class="sobre">
       <router-link :to="{ name: `${slide}`, params: { slide } }"
-        >Sobre o Projeto {{ slide }}</router-link
+        >Sobre o {{ slide }}</router-link
       >
       <img class="arrow-img" src="../assets/arrow-red.svg" alt="Arrow-Icon" />
     </div>
@@ -180,6 +180,15 @@ img {
 @media screen and (max-width: 700px) {
   .slide-wrapper {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    margin-top: 120px;
+  }
+  .sobre {
+    margin-top: 30px;
   }
 }
 </style>

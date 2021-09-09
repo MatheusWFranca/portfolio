@@ -7,14 +7,14 @@
         method="POST"
       >
         <label for="nome" required>Nome_</label>
-        <input type="text" id="nome" v-model="nome" name="nome" required />
+        <input type="text" id="nome" name="nome" required />
         <label for="email">Email_</label>
-        <input type="email" id="email" v-model="email" name="email" required />
+        <input type="email" id="email" name="email" required />
         <label for="textarea">Sua mensagem_</label>
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://www.mfranca.dev/" />
+        <input type="hidden" name="_next" value="www.mfranca.dev" />
         <textarea name="message" id="message" rows="10" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
+        <button @click="alerta" type="submit" class="btn">Enviar</button>
       </form>
     </div>
     <div class="medias">
@@ -33,12 +33,30 @@
       </div>
     </div>
     <q>A maior constante da nossa vida é a Mudança - Heráclito</q>
+    <div class="alerta" :class="{ ativo: alertaAtivo }">
+      <p class="alerta_msg">{{ mensagemAlerta }}</p>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
   name: 'Contato',
+  data() {
+    return {
+      alertaAtivo: false,
+      mensagemAlerta: 'Email enviando com sucesso 🥳',
+    };
+  },
+  methods: {
+    alerta(mensagem) {
+      this.mensagemAlerta = mensagem;
+      this.alertaAtivo = true;
+      setTimeout(() => {
+        this.alertaAtivo = false;
+      }, 1500);
+    },
+  },
 };
 </script>
 
@@ -109,6 +127,29 @@ q {
   text-align: center;
   font-style: italic;
   margin: 60px 0;
+}
+
+.alerta {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.alerta.ativo {
+  display: block;
+  animation: fadeInDown 0.3s forwards;
+}
+
+.alerta_msg {
+  background: #fff;
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid #000;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 579px) {

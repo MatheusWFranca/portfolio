@@ -8,7 +8,7 @@ import Animais from '../views/AnimaisFantasticos.vue'
 import DevFinances from '../views/DevFinances.vue'
 import Clima from '../views/ClimaDiario.vue'
 import Bisnik from '../views/Bisnik.vue'
-
+import Obrigado from '../views/Obrigado.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -52,9 +52,14 @@ const routes = [{
     props: true,
   },
   {
-    path: '/contato',
+    path: '/contato/',
     name: 'contato',
-    component: Contato
+    component: Contato,
+  },
+  {
+    path: '/obrigado',
+    name: 'obrigado',
+    component: Obrigado,
   }
 ]
 

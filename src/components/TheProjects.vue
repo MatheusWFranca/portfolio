@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div class="slide-wrapper" @click="getIndex">
+    <div class="slide-wrapper" @click="getIndex" v-touch:start="getIndex" v-touch:end="getIndex">
       <ul class="slide" ref="carrosel">
         <li>
           <img src="../assets/projeto-1.png" alt="Techno" />
@@ -34,6 +34,7 @@
 
 <script>
 import { SlideNav } from '@/helpers/slide.js';
+
 
 export default {
   name: 'TheProjects',

@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div class="slide-wrapper" @click="getIndex" v-touch:start="getIndex" v-touch:end="getIndex">
+    <div class="slide-wrapper" @click="getIndex" v-touch:end="getIndexMobile">
       <ul class="slide" ref="carrosel">
         <li>
           <img src="../assets/projeto-1.png" alt="Techno" />
@@ -52,8 +52,13 @@ export default {
     },
     getIndex() {
       const lista = document.querySelector('.active img').getAttribute('alt');
-      this.slide = lista;
+      this.slide = lista
     },
+    getIndexMobile() {
+      setInterval(() => {
+        this.getIndex()
+      })
+    }
   },
   mounted() {
     this.initSlide();

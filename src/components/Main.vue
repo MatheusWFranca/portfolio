@@ -10,7 +10,7 @@
         </p>
         <p>No momento estou focado em Vue.js/ReactJS.</p>
         <p>
-          Em meu tempo livre, costumo jogar, estudar e fazer alguns projetos
+          Em meu tempo livre, costumo estudar e fazer alguns projetos
           paralelos.
         </p>
         <p>
@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .profile-img {
   max-width: 200px;
-  border-radius: 5px;
+  border-radius: 100px;
 }
 
 .main {

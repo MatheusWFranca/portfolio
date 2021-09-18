@@ -9,6 +9,8 @@ import DevFinances from '../views/DevFinances.vue'
 import Clima from '../views/ClimaDiario.vue'
 import Bisnik from '../views/Bisnik.vue'
 import Obrigado from '../views/Obrigado.vue'
+import Certificados from '../views/Certificados.vue'
+
 Vue.use(VueRouter)
 
 const routes = [{
@@ -60,6 +62,11 @@ const routes = [{
     path: '/obrigado',
     name: 'obrigado',
     component: Obrigado,
+  },
+  {
+    path: '/certificados',
+    name: 'certificados',
+    component: Certificados,
   }
 ]
 

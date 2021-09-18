@@ -18,7 +18,7 @@
           value="http://www.mfranca.dev/obrigado"
         />
         <textarea name="message" id="message" rows="10" required></textarea>
-        <button @click="alerta" type="submit" class="btn">Enviar</button>
+        <button type="submit" class="btn">Enviar</button>
       </form>
     </div>
     <div class="medias">

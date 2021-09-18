@@ -55,9 +55,9 @@ export default {
       this.slide = lista
     },
     getIndexMobile() {
-      setInterval(() => {
+      setTimeout(() => {
         this.getIndex()
-      })
+      }, 100)
     }
   },
   mounted() {

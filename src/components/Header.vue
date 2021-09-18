@@ -7,7 +7,7 @@
       </button>
       <ul class="menu">
         <li @click="toggleMenu">
-          <router-link to="/">Curriculo</router-link>
+          <router-link to="/">Certificados</router-link>
         </li>
         <li @click="toggleMenu">
           <router-link to="/projetos">Projetos</router-link>

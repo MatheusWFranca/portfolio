@@ -7,7 +7,7 @@
       </button>
       <ul class="menu">
         <li @click="toggleMenu">
-          <router-link to="/">Certificados</router-link>
+          <router-link to="/">Sobre</router-link>
         </li>
         <li @click="toggleMenu">
           <router-link to="/projetos">Projetos</router-link>
@@ -74,7 +74,7 @@ nav h1 {
   font-size: 30px;
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 493px) {
   .menu {
     display: flex;
     flex-direction: column;
@@ -90,8 +90,12 @@ nav h1 {
     overflow-y: hidden;
   }
 
+  li a {
+    font-size: 20px;
+  }
+
   #nav.active .menu {
-    height: calc(90vh - 70px);
+    height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }

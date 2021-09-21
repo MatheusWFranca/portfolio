@@ -8,7 +8,7 @@
           Gosto muito de aprender novas tecnologias e estar sempre aprimorando
           meu conhecimento.
         </p>
-        <p>No momento estou focado em Vue.js/ReactJS.</p>
+        <p>No momento estou focado em Typescript, Vue.js e ReactJS.</p>
         <p>
           Em meu tempo livre, costumo estudar e fazer alguns projetos
           paralelos.
@@ -19,7 +19,7 @@
       </div>
     </main>
     <article class="habilidades">
-      <h2>Habilidades</h2>
+      <h2>Skills</h2>
       <ul>
         <li><img src="../assets/javascript.svg" alt="Javascript" /></li>
         <li><img src="../assets/vue.svg" alt="Vue.js" /></li>
@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .profile-img {
   max-width: 200px;
-  border-radius: 100px;
+  border-radius: 5px;
 }
 
 .main {

@@ -121,6 +121,10 @@ textarea:focus {
     font-size: 19px;
   }
 
+  h2 {
+    font-size: 16px;
+  }
+  
   p {
     font-size: 14px;
   }

@@ -25,7 +25,7 @@
     </div>
     <div class="sobre">
       <router-link :to="{ name: `${slide}`, params: { slide } }"
-        >Sobre o {{ slide }}</router-link
+        >Ver o {{ slide }}</router-link
       >
       <img class="arrow-img" src="../assets/arrow-red.svg" alt="Arrow-Icon" />
     </div>

@@ -18,7 +18,7 @@
         class="btn"
         href="https://github.com/MatheusWFranca/meuclima"
         target="_blank"
-        >Código Fonte(github)</a
+        >Github</a
       >
     </div>
   </section>

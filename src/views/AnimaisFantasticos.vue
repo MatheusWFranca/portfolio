@@ -24,7 +24,7 @@
         class="btn"
         href="https://github.com/MatheusWFranca/animais-fantasticos"
         target="_blank"
-        >Código Fonte(github)</a
+        >Github</a
       >
     </div>
   </section>

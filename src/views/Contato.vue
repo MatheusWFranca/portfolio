@@ -22,6 +22,7 @@
       </form>
     </div>
     <div class="medias">
+      <h2>Onde me encontrar?</h2>
       <img src="../assets/contact.svg" alt="Contato" />
       <div class="socials">
         <a
@@ -29,8 +30,9 @@
           target="_Blank"
           title="linkedin"
         >
-          <img src="../assets/linkedin.svg" alt="Linkedin"
-        /></a>
+        <img src="../assets/linkedin.svg" alt="Linkedin"
+        />
+        </a>
         <a href="https://github.com/matheuswfranca" target="_blank">
           <img src="../assets/github.svg" alt="Github" />
         </a>
@@ -52,6 +54,14 @@ img {
   width: 280px;
 }
 
+.container {
+  max-width: 900px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .btn {
   max-width: 100%;
   width: 300px;
@@ -60,14 +70,6 @@ img {
 
 .btn:hover {
   background: #ffb666;
-}
-
-.container {
-  max-width: 900px;
-  margin: 15px auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .medias {

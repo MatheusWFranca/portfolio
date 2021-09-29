@@ -22,7 +22,7 @@
       </form>
     </div>
     <div class="medias">
-      <h2>Onde me encontrar?</h2>
+      <h2 class="onde">Onde me encontrar?</h2>
       <img src="../assets/contact.svg" alt="Contato" />
       <div class="socials">
         <a
@@ -93,10 +93,16 @@ img {
   flex: 1;
 }
 
+.onde {
+  text-align: center;
+}
+
+
 h2 {
   font-size: 26px;
   margin-bottom: 20px;
 }
+
 
 form {
   display: flex;

@@ -10,6 +10,7 @@ import Clima from '../views/ClimaDiario.vue'
 import Bisnik from '../views/Bisnik.vue'
 import Obrigado from '../views/Obrigado.vue'
 import Certificados from '../views/Certificados.vue'
+import ComexApp from '../views/ComexApp.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,12 @@ const routes = [{
     path: '/projeto/techno',
     name: 'Techno',
     component: Techno,
+    props: true,
+  },
+  {
+    path: '/projeto/ecomex',
+    name: 'ComexApp',
+    component: ComexApp,
     props: true,
   },
   {

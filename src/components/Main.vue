@@ -1,14 +1,14 @@
 <template>
   <section class="container">
     <main class="main">
-      <img class="profile-img" src="../assets/profile-pic.png" />
+      <img class="profile-img" src="../assets/profile-pic.jpeg" />
       <div class="my-details">
         <h1>Olá, Eu sou o Matheus 🧙‍♂️</h1>
         <p>
-          Gosto muito de aprender novas tecnologias e estar sempre aprimorando
+          Gosto de aprender tecnologias e estar sempre aprimorando
           meu conhecimento.
         </p>
-        <p>No momento estou focado em Typescript, Vue.js e ReactJS.</p>
+        <p>Tenho experiência em Javascript, HTML, CSS e Microsoft Power Plataform.</p>
         <p>
           Dúvidas? Entre em <router-link to="/contato">contato</router-link>!
         </p>

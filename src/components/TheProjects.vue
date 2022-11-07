@@ -3,6 +3,9 @@
     <div class="slide-wrapper" @click="getIndex" v-touch:end="getIndexMobile">
       <ul class="slide" ref="carrosel">
         <li>
+          <img src="../assets/projeto-06.png" alt="ComexApp" />
+        </li>
+        <li>
           <img src="../assets/projeto-1.png" alt="Techno" />
         </li>
         <li class="animais">

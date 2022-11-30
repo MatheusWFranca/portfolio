@@ -12,6 +12,7 @@
         <li>Power BI</li>
         <li>Consumo de API's para webscraping de navios (ETA/ETD, IMO, ETC..)</li>
         <li>Integração com o teams</li>
+        <li>Automações interligadas em um só sistema para atualização de pedidos no sistema ERP</li>
         <li>Visão de todos os itens importados, visando melhor clareza ao planejamento.</li>
       </ul>
       <a

@@ -5,24 +5,23 @@
       <div class="my-details">
         <h1>Olá, Eu sou o Matheus 🧙‍♂️</h1>
         <p>
-          Gosto de aprender tecnologias e estar sempre aprimorando
-          meu conhecimento.
+          Gosto de aprender novas tecnologias. 
         </p>
-        <p>Tenho experiência em Javascript, HTML, CSS e Microsoft Power Plataform.</p>
+        <p>Atualmente trabalho com análise de dados e com desenvolvimento de bots RPA.</p>
+        <p>Tenho experiência com: </p>
+        <ul class="experience">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>PowerBI</li>
+          <li>RPA (UIPath, PowerAutomate, Selenium)</li>
+          <li>Pentaho</li>
+          <li>Git</li>
+        </ul>
         <p>
           Dúvidas? Entre em <router-link to="/contato">contato</router-link>!
         </p>
       </div>
     </main>
-    <article class="habilidades">
-      <h2>Skills</h2>
-      <ul>
-        <li><img src="../assets/javascript.svg" alt="Javascript" /></li>
-        <li><img src="../assets/vue.svg" alt="Vue.js" /></li>
-        <li><img src="../assets/html.svg" alt="Html5" /></li>
-        <li><img src="../assets/css.svg" alt="CSS" /></li>
-      </ul>
-    </article>
   </section>
 </template>
 
@@ -40,7 +39,7 @@ export default {
 
 .main {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 30px;
   margin-bottom: 30px;
 }
@@ -50,7 +49,7 @@ h1 {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-style: italic;
   color: #717999;
 }
@@ -88,6 +87,16 @@ li img {
   width: 35px;
   height: 35px;
   margin-right: 20px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  list-style: disc;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  color: #717999;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 460px) {
